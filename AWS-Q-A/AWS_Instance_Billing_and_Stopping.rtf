@@ -1,42 +1,36 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2707
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+## AWS Instance Billing and Stopping Behavior
 
-\f0\fs24 \cf0 ## AWS Instance Billing and Stopping Behavior\
-\
-When it comes to AWS instances, the billing depends on the state and configuration of the instance. \
-Let's explore the scenario of creating and stopping an instance to understand how it affects billing. \
-\
-\uc0\u55357 \u56632  When you create an instance on AWS, you are billed based on the instance type, region, and the time the instance is in a running state. \
-   The billing starts as soon as the instance is launched and stops when the instance is terminated. \
-\
-\uc0\u55357 \u56632  However, if you create an instance and then stop it, AWS provides a feature called "Instance Stop" behavior. \
-   This allows you to stop the instance without terminating it completely. When an instance is stopped, you are no longer billed for the instance \
-   hours.\
-\
-\uc0\u55357 \u56632  But remember, you still incur charges for any associated storage, such as EBS volumes and snapshots, and static IP addresses if applicable.\
-\
-\
-In summary:\
-\
-- \uc0\u9745 \u65039  Starting an instance incurs charges for running hours.\
-- \uc0\u9208 \u65039  Stopping an instance pauses billing for the instance itself.\
-- \uc0\u9209 \u65039  Terminating an instance stops billing altogether.\
-\
-Stopping an instance is a cost-saving approach as it:\
-\
-- \uc0\u55357 \u56580  Pauses the instance billing while preserving its configuration.\
-- \uc0\u55357 \u56510  Reduces costs by not paying for idle instances.\
-- \uc0\u55357 \u56579  Enables flexibility in scaling resources based on demand.\
-- \uc0\u55356 \u57263  Allows optimization of expenses by paying only for active resources.\
-```\
-\
-This ability to stop instances and suspend billing for compute resources is indeed one of the significant advantages of cloud computing. \
-It offers flexibility and cost optimization by allowing you to scale your infrastructure based on demand.\
-\
-In summary, if you create and stop an instance on AWS, you won't be billed for the instance hours, but you will still incur charges for \
-associated storage and other resources. This flexibility is a key advantage of cloud computing, as it allows businesses to dynamically allocate \
-resources as required, making it a cost-effective solution.}
+When it comes to AWS instances, the billing depends on the state and configuration of the instance. 
+Let's explore the scenario of creating and stopping an instance to understand how it affects billing. 
+
+🔸 When you create an instance on AWS, you are billed based on the instance type, region, and the time the instance is in a running state. 
+   The billing starts as soon as the instance is launched and stops when the instance is terminated. 
+
+🔸 However, if you create an instance and then stop it, AWS provides a feature called "Instance Stop" behavior. 
+   This allows you to stop the instance without terminating it completely. When an instance is stopped, you are no longer billed for the 
+instance 
+   hours.
+
+🔸 But remember, you still incur charges for any associated storage, such as EBS volumes and snapshots, and static IP addresses if applicable.
+
+
+In summary:
+
+- ☑️ Starting an instance incurs charges for running hours.
+- ⏸️ Stopping an instance pauses billing for the instance itself.
+- ⏹️ Terminating an instance stops billing altogether.
+
+Stopping an instance is a cost-saving approach as it:
+
+- 🔄 Pauses the instance billing while preserving its configuration.
+- 💾 Reduces costs by not paying for idle instances.
+- 🔃 Enables flexibility in scaling resources based on demand.
+- 🎯 Allows optimization of expenses by paying only for active resources.
+```
+
+This ability to stop instances and suspend billing for compute resources is indeed one of the significant advantages of cloud computing. 
+It offers flexibility and cost optimization by allowing you to scale your infrastructure based on demand.
+
+In summary, if you create and stop an instance on AWS, you won't be billed for the instance hours, but you will still incur charges for 
+associated storage and other resources. This flexibility is a key advantage of cloud computing, as it allows businesses to dynamically 
+allocate resources as required, making it a cost-effective solution.
